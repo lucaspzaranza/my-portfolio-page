@@ -23,12 +23,12 @@
 
 /* Hero Style */
 .cta-btn--hero {
-  background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  border-width: 2px;
-  border-style: solid;
-  border-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  background-image: linear-gradient(135deg, #242424 0%, #1a1630 100%);
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: white;
+  // border-width: 2px;
+  // border-style: solid;
+  //border-image: linear-gradient(135deg, #242424 0%, #1a1630 100%);
   border-image-slice: 1;
   cursor: pointer;
   // Responsive Button hero style
@@ -39,7 +39,7 @@
   }
 
   &::after {
-    background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+    background-image: linear-gradient(135deg, $dark-grey 0%, $dark-blue-text 100%);
     // Responsive Button hero style
     @include respond(phone) {
       background-image: none;
@@ -51,7 +51,7 @@
     text-decoration: none;
     // Responsive Button hover hero style
     @include respond(phone) {
-      -webkit-text-fill-color: $secondary-color;
+      webkit-text-fill-color: $secondary-color;
     }
 
     &::after {
@@ -82,4 +82,83 @@
 /* Arrow Button */
 .up i {
   color: #272727;
+}
+
+/* Project Style */
+.cta-btn--project {
+  background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  border-image-slice: 1;
+  cursor: pointer;
+  // Responsive Button hero style
+  @include respond(phone) {
+    background-image: none;
+    border: 2px solid $secondary-color;
+    -webkit-text-fill-color: $secondary-color;
+  }
+
+  &::after {
+    background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+    // Responsive Button hero style
+    @include respond(phone) {
+      background-image: none;
+    }
+  }
+
+  &:hover {
+    -webkit-text-fill-color: $white-color;
+    text-decoration: none;
+    // Responsive Button hover hero style
+    @include respond(phone) {
+      webkit-text-fill-color: $secondary-color;
+    }
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.show-hide-btns{
+  display: flex;
+  justify-content: center;
+}
+
+.go-left{
+  transition: 0.5s ease-in-out;
+  transform: translate(-39.5em,0);
+}
+
+.go-right{
+  transition: 0.5s ease-in-out;
+  transform: translate(0em,0);
+}
+
+.toggle-projects {
+  font-size: $big-font-size;
+  width: 8em;
+  display: flex;
+  margin-bottom: 20px;
+  
+
+  img {
+    width: 1.4em;
+  }
+
+  span{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+  }
+
+  &:hover{
+    img{
+      filter: invert(100%);
+      -webkit-filter: invert(100%);
+    }
+  }
 }
