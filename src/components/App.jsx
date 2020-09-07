@@ -7,12 +7,13 @@ import Footer from './Footer/Footer';
 
 import { PortfolioProvider } from '../context/context';
 
-import { heroData, aboutData, gameProjectsData, contactData, footerData } from '../mock/data';
+import { heroData, aboutData, gameProjectsData, appProjectsData, contactData, footerData } from '../mock/data';
 
 function App() {
   const [hero, setHero] = useState({});
   const [about, setAbout] = useState({});
-  const [projects, setProjects] = useState([]);
+  const [gameProjects, setProjects] = useState([]);
+  const [appProjects, setApps] = useState([]);
   const [contact, setContact] = useState({});
   const [footer, setFooter] = useState({});
 
@@ -20,12 +21,13 @@ function App() {
     setHero({ ...heroData });
     setAbout({ ...aboutData });
     setProjects([...gameProjectsData]);
+    setApps([...appProjectsData]);
     setContact({ ...contactData });
     setFooter({ ...footerData });
   }, []);
 
   return (
-    <PortfolioProvider value={{ hero, about, projects, contact, footer }}>
+    <PortfolioProvider value={{ hero, about, gameProjects, appProjects, contact, footer }}>
       <Hero />
       <About />
       <Projects />

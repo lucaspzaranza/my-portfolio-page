@@ -59,6 +59,70 @@ export const gameProjectsData = [
   },
 ];
 
+// APP PROJECTS DATA
+export const appProjectsData = [
+  {
+    id: nanoid(),
+    img: 'react-native-calculator.png',
+    title: 'Calculadora',
+    info: 'Uma calculadora que realiza as operações matemáticas básicas.',
+    info2: 'Feito com React Native.',
+    platform: 'Android',
+    url: 'https://snack.expo.io/@lucasz/calculator',
+    repo: 'https://github.com/lucaspzaranza/calculator-react-native', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'mines.png',
+    title: 'Campo Minado',
+    info: 'Jogo de campo minado para celular.',
+    info2: 'Feito com React Native.',
+    platform: 'Android',
+    url: 'https://snack.expo.io/@lucasz/mine-field', // if no url, the button will not show up
+    repo: 'https://github.com/lucaspzaranza/react-native-mine-field', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'tasks.png',
+    title: 'Lista de Afazeres',
+    info: 'Adicione seus afazeres, coloque datas e marque o que já foi concluído.',
+    info2: 'Feito com React Native.',
+    platform: 'Android',
+    url: '',
+    repo: 'https://github.com/lucaspzaranza/offline-react-native-tasks', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'gamezone-expo.png',
+    title: 'Gamezone',
+    info: 'Publique resenhas sobre seus jogos e dê classificações a eles.',
+    info2: 'Feito com React Native.',
+    platform: 'Android',
+    url: 'https://expo.io/@lucasz/gamezone',
+    repo: 'https://github.com/lucaspzaranza/gamezone', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'robots-rolodex.png',
+    title: 'Robots Rolodex',
+    info: 'Busque determinado robô digitando seu nome.',
+    info2: 'Feito com React.',
+    platform: 'Web',
+    url: 'https://lucaspzaranza.github.io/robots-rolodex/',
+    repo: 'https://github.com/lucaspzaranza/robots-rolodex', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'marioplan.png',
+    title: 'MarioPlan',
+    info: 'Publique suas tarefas cotidianas num planner com temática de Super Mario World.',
+    info2: 'Feito com React.',
+    platform: 'Web',
+    url: 'https://net-ninja-marioplan-c7114.web.app/',
+    repo: 'https://github.com/lucaspzaranza/marioplan', // if no repo, the button will not show up
+  },
+];
+
 // CONTACT DATA
 export const contactData = {
   cta: 'Quer entrar em contato comigo? É simples.',
