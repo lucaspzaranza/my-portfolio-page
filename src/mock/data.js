@@ -83,6 +83,16 @@ export const appProjectsData = [
   },
   {
     id: nanoid(),
+    img: 'lambe-lambe.png',
+    title: 'Lambe Lambe',
+    info: 'Projeto clone do Instagram com suas funcionalidades básicas implementadas.',
+    info2: 'Feito com React Native, Redux, e Firebase.',
+    platform: 'Android',
+    url: '',
+    repo: 'https://github.com/lucaspzaranza/lambe-lambe', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
     img: 'tasks.png',
     title: 'Lista de Afazeres',
     info: 'Adicione seus afazeres, coloque datas e marque o que já foi concluído.',
