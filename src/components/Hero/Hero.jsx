@@ -25,12 +25,13 @@ const Header = () => {
     <section id="hero" className="jumbotron">
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-          <img className="hero-img" src={require('../../../assets/IMG_0136.jpg')}/>
+          <img alt="img" className="hero-img" src={require('../../../assets/IMG_0136.jpg')} />
           <h1 className="hero-title">
-            {title || ''}{''}
+            {title || ''}
+            {''}
             <span>{name || 'Lucas Zaranza'}</span>
             <br />
-            {subtitle || "Desenvolvedor de games e apps."}
+            {subtitle || 'Desenvolvedor de games e apps.'}
           </h1>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">

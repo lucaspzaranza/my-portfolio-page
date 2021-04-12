@@ -11,12 +11,14 @@ import classNames from 'classnames/bind';
 const Projects = () => {
   const { gameProjects } = useContext(PortfolioContext);
   const { appProjects } = useContext(PortfolioContext);
+  const { dotnetProjects } = useContext(PortfolioContext);
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
   const [showGames, setShowGames] = useState(false);
   const [showApps, setShowApps] = useState(false);
+  const [showDotnet, setShowDotnet] = useState(false);
 
   useEffect(() => {
     if (window.innerWidth > 769) {
@@ -49,7 +51,7 @@ const Projects = () => {
                   </div>
                   {(<a target="_blank" rel="noopener noreferrer" className="cta-btn cta-btn--project"                                                
                     href={url || '#!'}>              
-                  Página Oficial
+                    Página Oficial
                   </a>)}
     
                   {repo && (
@@ -83,6 +85,7 @@ const Projects = () => {
 
   const games = getProjects(gameProjects);
   const apps = getProjects(appProjects);
+  const dotnet = getProjects(dotnetProjects);
   
   return (
     <section id="projects">
@@ -111,6 +114,18 @@ const Projects = () => {
             </div>                                       
             
             {showApps && apps}
+
+            <div className={classNames({"show-hide-btns": true, 
+            "go-left": showDotnet, "go-right": !showDotnet})}>
+                <p target="_blank" rel="noopener noreferrer" 
+                  className="cta-btn cta-btn--project toggle-projects" 
+                  onClick={() => setShowDotnet(!showDotnet)}>
+                  <img src={require("../../../assets/vs.png")}/>
+                  <span>.NET</span>
+                </p>
+            </div>                                       
+            
+            {showDotnet && dotnet}
         </div>
       </Container>
     </section>

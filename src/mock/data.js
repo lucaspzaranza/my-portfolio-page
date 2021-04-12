@@ -10,18 +10,19 @@ export const headData = {
 // HERO DATA
 export const heroData = {
   title: '',
-  name: 'Lucas Zaranza.',
-  subtitle: 'Mobile & Game Developer.',
-  cta: 'Saiba mais'
+  name: 'Lucas Zaranza',
+  subtitle: 'Desenvolvedor de Sistemas',
+  cta: 'Saiba mais',
 };
 
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.png',
-  paragraphOne: 'Sou desenvolvedor de jogos em Unity 3D com 7 anos de experiência, tendo trabalhado com projetos para eventos corporativos, recriando jogos clássicos customizados para cada evento.',
-  paragraphTwo: 'Tenho projetos solo, como o Penosas Strike, um indie game para Android no qual desenvolvi toda a programação e gráficos do projeto.',
-  paragraphThree: 'Sigo atualmente me aprofundando no desenvolvimento de apps mobile com React Native.',
-  paragraphFour: 'Músico por hobby e amante do Pixel Art.',
+  paragraphOne: 'Sou desenvolvedor de sistemas .NET, onde já trabalhei no desenvolvimento de sistemas educativos.',
+  paragraphTwo: 'Minha maior experiência é com Unity 3D, cerca de oito anos, onde já desenvolvi projetos para eventos corporativos, até projetos solo, como o Penosas Strike, um indie game feito inteiramente por mim, dos gráficos a programação.',
+  paragraphThree: 'Sigo atualmente me aprofundando no desenvolvimento de apps com frameworks de JavaScript, no front-end com ReactJS, e no backend com NodeJS.',
+  paragraphFour: 'Meu maior objetivo é me tornar um desenvolvedor fullstack, e entender toda arquitetura dos projetos em que eu estiver trabalhando.',
+  paragraphFive: 'Músico por hobby e amante da Pixel Art.',
   resume: 'https://rb.gy/uccy8z', // if no resume, the button will not show up
 };
 
@@ -132,6 +133,35 @@ export const appProjectsData = [
     repo: 'https://github.com/lucaspzaranza/marioplan', // if no repo, the button will not show up
   },
 ];
+
+export const dotnetProjectsData = [
+  {
+    id: nanoid(),
+    img: 'InscriSER.png',
+    title: 'SER - Serviço de Ensino Religioso',
+    info: 'Sistema para controle de matrículas e presenças dos alunos matriculados nos cursos de Primeira Eucaristia e Crisma.',
+    info2: 'Feito com Blazor, C#, HTML5, PostgreSQL, Bootstrap e Vanilla JavaScript.',
+    platform: 'Web',
+    url: 'https://inscriser999.azurewebsites.net/'
+  },
+  {
+    id: nanoid(),
+    img: 'Objap.png',
+    title: 'Objetivos de Aprendizagem',
+    info: 'Sistema para elaboração de plano de aula para os professores universitários da Unichristus.',
+    info2: 'Feito com Blazor, C#, HTML5, PostgreSQL, Bootstrap e Vanilla JavaScript.',
+    platform: 'Web',
+    url: 'https://objap999.azurewebsites.net/'
+  },
+  {
+    id: nanoid(),
+    img: 'API.png',
+    title: 'API Restful de Alunos',
+    info: 'API para realizar operações CRUD e de autenticação.',
+    info2: 'Feito com C# em .NET, Entity Framework e Identity.',
+    platform: 'Web'
+  },
+]
 
 // CONTACT DATA
 export const contactData = {
