@@ -61,12 +61,22 @@ export const gameProjectsData = [
   {
     id: nanoid(),
     img: 'snake.png',
-    title: 'Protótipo do Jogo da Cobrinha',
-    info: 'Réplica do clássico snake.',
+    title: 'Jogo da Cobrinha',
+    info: 'Réplica do clássico snake feita em 1 dia.',
     info2: 'Feito com Unity 3D e C#.',
     platform: 'PC',
     url: 'https://lucaspzaranza.github.io/snake-project-page/',
     repo: 'https://github.com/lucaspzaranza/snake-project', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'diep.io.png',
+    title: 'Diep.io',
+    info: 'Réplica do jogo diep.io feita em 7 dias. Original: https://diep.io/ .',
+    info2: 'Feito com Unity 3D e C#.',
+    platform: 'PC',
+    //url: 'https://lucaspzaranza.github.io/snake-project-page/',
+    repo: 'https://github.com/lucaspzaranza/diep.io-challenge', // if no repo, the button will not show up
   },
 ];
 
