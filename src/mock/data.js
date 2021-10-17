@@ -11,7 +11,7 @@ export const headData = {
 export const heroData = {
   title: '',
   name: 'Lucas Zaranza',
-  subtitle: 'Desenvolvedor de Sistemas',
+  subtitle: 'Desenvolvedor de Sistemas & Games',
   cta: 'Saiba mais',
 };
 
@@ -57,6 +57,16 @@ export const gameProjectsData = [
     platform: 'PC',
     url: 'https://lucaspzaranza.github.io/slot-machine-page/',
     repo: 'https://github.com/lucaspzaranza/slot-machine', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'snake.png',
+    title: 'Protótipo do Jogo da Cobrinha',
+    info: 'Réplica do clássico snake.',
+    info2: 'Feito com Unity 3D e C#.',
+    platform: 'PC',
+    url: 'https://lucaspzaranza.github.io/snake-project-page/',
+    repo: 'https://github.com/lucaspzaranza/snake-project', // if no repo, the button will not show up
   },
 ];
 
@@ -161,6 +171,23 @@ export const dotnetProjectsData = [
     info2: 'Feito com C# em .NET, Entity Framework e Identity.',
     platform: 'Web'
   },
+  {
+    id: nanoid(),
+    img: 'OS Adesão.png',
+    title: 'Odonto System Call Center',
+    info: 'Participei do desenvolvimento do novo sistema de Call Center da Odonto System na parte de gravação das chamadas com clientes e gerência das adesões.',
+    info2: 'Feito com C# em .NET, SQL Server, e JavaScript.',
+    platform: 'Web',
+    url: 'https://www.odontosystem.com.br/osadesao/login.aspx'
+  },
+  {
+    id: nanoid(),
+    img: 'wflow api.png',
+    title: 'Wflow API',
+    info: 'API com os endpoints do sistema de gerenciamento de seguros Wflow, da empresa Wiz.',
+    info2: 'Feito com C# em .NET.',
+    platform: 'Web',
+  }
 ]
 
 // CONTACT DATA

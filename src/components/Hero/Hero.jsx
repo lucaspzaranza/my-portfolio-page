@@ -31,7 +31,7 @@ const Header = () => {
             {''}
             <span>{name || 'Lucas Zaranza'}</span>
             <br />
-            {subtitle || 'Desenvolvedor de games e apps.'}
+            {subtitle || 'Desenvolvedor de games e sistemas.'}
           </h1>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
