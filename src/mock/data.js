@@ -34,7 +34,7 @@ export const gameProjectsData = [
     title: 'Penosas Strike',
     info: 'Controle uma galinha soldado para mirar e acertar em pombos correio e interceptar suas mensagens secretas.',
     info2: 'Feito com Unity 3D, C# e Aseprite.',
-    platform: 'Android',
+    platform: 'Mobile',
     url: 'https://play.google.com/store/apps/details?id=com.SacroCuore.PenosasStrike',
     repo: 'https://github.com/lucaspzaranza/penosas-strike', // if no repo, the button will not show up
   },
